@@ -25,7 +25,7 @@ const CreateUser = (props) => {
     e.preventDefault();
 
     axios
-      .post('https://5000-meipsita-rentalmgmt-1b6kz4strjb.ws-us94.gitpod.io/api/rooms', room)
+      .post('/api/rooms', room)
       .then((res) => {
         setroom({
           

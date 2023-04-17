@@ -17,7 +17,7 @@ function UpdateRoom(props) {
 
   useEffect(() => {
     axios
-    .get(`https://5000-meipsita-rentalmgmt-1b6kz4strjb.ws-us94.gitpod.io/api/rooms/${id}`)
+    .get(`/api/rooms/${id}`)
       .then((res) => {
         setRoom({
           name: res.data.name,

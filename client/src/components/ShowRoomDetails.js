@@ -11,7 +11,7 @@ function ShowRoomDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`https://5000-meipsita-rentalmgmt-1b6kz4strjb.ws-us94.gitpod.io/api/rooms/${id}`)
+      .get(`/api/rooms/${id}`)
       .then((res) => {
         setRoom(res.data);
       })
@@ -22,7 +22,7 @@ function ShowRoomDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`https://5000-meipsita-rentalmgmt-1b6kz4strjb.ws-us94.gitpod.io/api/rooms/${id}`)
+      .delete(`/api/rooms/${id}`)
       .then((res) => {
         navigate('/');
       })

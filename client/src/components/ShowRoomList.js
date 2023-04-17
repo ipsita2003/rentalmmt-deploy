@@ -9,7 +9,7 @@ function ShowRoomList() {
 
   useEffect(() => {
     axios
-      .get(`https://5000-meipsita-rentalmgmt-1b6kz4strjb.ws-us94.gitpod.io/api/rooms`)
+      .get(`/api/rooms`)
       .then((res) => {
         setRooms(res.data);
       })
