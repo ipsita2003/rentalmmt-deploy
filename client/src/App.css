@@ -1,0 +1,257 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .CreateUser {
+    background-color: #9fa4c4;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    min-height: 100vh;
+    color: beige;
+  }
+  
+  .ShowRoomDetails {
+    background-color: #9fa4c4;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    min-height: 100vh;
+    color: beige;
+  }
+  
+  .UpdateRoom {
+    background-color: #9fa4c4;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    min-height: 100vh;
+    color: beige;
+  }
+  
+  .ShowRoomList {
+    background-color: #9fa4c4;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100px;
+    color: black;
+  }
+  
+  
+  .list {
+    display: grid;
+    margin: 20px 0 50px 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 2em;
+  }
+  
+  
+  .card-container {
+    width: 250px;
+    border: 1px solid rgb(5, 5, 5);
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  /* .card-container image {
+    width: 100%;
+    height: 50%;
+  } */
+  
+  .desc {
+    height: 130px;
+    padding: 10px;
+  }
+  
+  .desc h2 {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  
+  .desc h3, p {
+    font-weight: 300;
+  }
+  
+  .desc h3  {
+    color: #6c757d;
+    font-size: 1em;
+    padding: 10px 0 10px 0;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+/*----------------------
+   Header section
+   -----------------------  */
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  
+
+}
+
+.navbar {
+
+  height: 60px;
+  background-color: #E8E8E8;
+  position: relative;
+
+}
+
+
+.logo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+
+}
+
+ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1B1A21;
+  text-decoration: none;
+}
+
+ul a.active {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+ul a.active::after {
+  /* content: ''; */
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+
+}
+
+ul a:hover {
+  color: #0b73f1;
+  text-decoration: none;
+}
+
+@media (max-width:768px) {
+  ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .nav-element {
+
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #99d6fb;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .nav-element.active {
+    width: 270px;
+  }
+
+  .nav-element ul {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .nav-element ul li {
+    margin-right: unset;
+    margin-top: 22px;
+    text-align: center;
+  }
+}
+
+
+/* hero-section  */
+
+.button {
+  width: 20px;
+}
+
+/* about-section  */
+.about-section {
+  background-color: #33BFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%2333BFFF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%2339b2f3' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%233ea6e7' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%234299db' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23458dce' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%234781c1' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%234875b3' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%234869a6' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23475e98' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2346538b' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2343487d' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23403d70' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%233c3362' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23382955' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23321f48' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%232d163c' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23260c2f' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
