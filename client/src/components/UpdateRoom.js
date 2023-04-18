@@ -52,7 +52,7 @@ function UpdateRoom(props) {
       };
 
       axios
-      .put(`https://5000-meipsita-rentalmgmt-1b6kz4strjb.ws-us94.gitpod.io/api/rooms/${id}`, data)
+      .put(`/api/rooms/${id}`, data)
       .then((res) => {
         navigate(`/show-room/${id}`);
       })
@@ -150,7 +150,7 @@ function UpdateRoom(props) {
               <input
                 type='text'
                 placeholder='Description of the Room'
-                name='Description'
+                name='description'
                 className='form-control'
                 value={room.description}
                 onChange={onChange}

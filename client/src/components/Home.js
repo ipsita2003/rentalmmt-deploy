@@ -53,7 +53,7 @@ const Home = () => {
           className="d-block w-100"
         src='https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2015/04/27/1448/Grand-Hyatt-Dubai-P353-Hotel-Exterior-Pools-Twilight.jpg/Grand-Hyatt-Dubai-P353-Hotel-Exterior-Pools-Twilight.16x9.jpg'
         alt='first'  
-        height={500}
+        height={600}
           width={100}
         />
         
@@ -63,7 +63,7 @@ const Home = () => {
           className="d-block w-100"
           src="https://i.pinimg.com/originals/4f/b7/ce/4fb7ce2d77c5b5c04399ab8f7cf6a28f.jpg"
           alt="Second slide"
-          height={500}
+          height={600}
           width={100}
         />
 
@@ -73,7 +73,7 @@ const Home = () => {
           className="d-block w-100"
           src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2014/09/21/1420/KOLKA-P035-La-Cucina-Pranzo-Set-Up.jpg/KOLKA-P035-La-Cucina-Pranzo-Set-Up.4x3.jpg"
           alt="Third slide"
-          height={500}
+          height={600}
           width={100}
 
         />
