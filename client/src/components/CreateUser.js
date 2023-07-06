@@ -9,7 +9,7 @@ const CreateUser = (props) => {
   const navigate = useNavigate();
   const [room, setroom] = useState({
     
-    Name: '',
+    name: '',
     maxcount: '',
     phonenumber: '',
     rentperday: '',
